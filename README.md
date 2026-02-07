@@ -65,6 +65,11 @@ The [residual sum of squares][wikipedia-residual-sum-of-squares] (also referred 
 To use in Observable,
 
 ```javascript
+drsskbn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-drsskbn/tags). For example,
+
+```javascript
 drsskbn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@v0.1.1-umd/browser.js' )
 ```
 
@@ -77,7 +82,7 @@ var drsskbn = require( 'path/to/vendor/umd/blas-ext-base-drsskbn/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -197,7 +202,7 @@ var z = drsskbn.ndarray( 4, x, 2, 1, y, 2, 1 );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-drsskbn@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
